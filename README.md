@@ -57,6 +57,7 @@ New accounts store passwords as salted PBKDF2-HMAC-SHA-256 hashes. Existing loca
 
 The bundled MySQL Connector/J driver is distributed by Oracle under GPLv2 with the Universal FOSS Exception. Its version-matched license is included beside the JAR in `lib/mysql-connector-j-26.7.0/LICENSE`; the [upstream 26.7.0 source](https://github.com/mysql/mysql-connector-j/tree/26.7.0) is also available.
 
+
 ## Contributors
 
 - [@dharnishm2025](https://github.com/dharnishm2025)
