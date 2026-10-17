@@ -1,0 +1,10 @@
+# Java compiler output
+*.class
+out/
+target/
+
+# Local machine and credentials
+.DS_Store
+.env
+.env.*
+!.env.example
