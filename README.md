@@ -61,3 +61,4 @@ The bundled MySQL Connector/J driver is distributed by Oracle under GPLv2 with t
 
 - [@dharnishm2025](https://github.com/dharnishm2025)
 - [@aakashkumar-jpg](https://github.com/aakashkumar-jpg)
+- [@Tishonsamson](https://github.com/Tishonsamson)
