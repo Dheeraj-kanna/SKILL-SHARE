@@ -17,14 +17,7 @@ public class SessionOperations {
     }
 
     public void scheduleSession(int studentId) {
-        String selectSql = "SELECT e.exchange_id, s.name, e.skill_name " +
-                           "FROM exchanges e JOIN students s " +
-                           "ON s.student_id = CASE " +
-                           "WHEN e.requester_id = ? THEN e.receiver_id " +
-                           "ELSE e.requester_id END " +
-                           "WHERE e.status = 'Accepted' " +
-                           "AND (e.requester_id = ? OR e.receiver_id = ?) " +
-                           "ORDER BY s.name";
+        String selectSql = "SELECT e.exchange_id, s.name, e.skill_name " + "FROM exchanges e JOIN students s " + "ON s.student_id = CASE " + "WHEN e.requester_id = ? THEN e.receiver_id " + "ELSE e.requester_id END " + "WHERE e.status = 'Accepted' " + "AND (e.requester_id = ? OR e.receiver_id = ?) " + "ORDER BY s.name";
 
         try (Connection con = DBConnection.getConnection();
              PreparedStatement select = con.prepareStatement(selectSql)) {
@@ -48,8 +41,7 @@ public class SessionOperations {
                     exchangeIds[count] = rs.getInt("exchange_id");
                     count++;
 
-                    System.out.println(count + ". " + rs.getString("name")
-                            + " - " + rs.getString("skill_name"));
+                    System.out.println(count + ". " + rs.getString("name") + " - " + rs.getString("skill_name"));
                 }
             }
 
