@@ -6,7 +6,7 @@ import java.util.Base64;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
 
-/** Hashes account passwords with PBKDF2-HMAC-SHA-256. */
+
 public final class PasswordHasher {
     private static final String PREFIX = "pbkdf2-sha256";
     private static final int ITERATIONS = 210_000;
@@ -31,7 +31,7 @@ public final class PasswordHasher {
         }
 
         if (!isHashed(storedValue)) {
-            // Existing local databases may contain accounts created before password hashing was added.
+
             return MessageDigest.isEqual(password.getBytes(StandardCharsets.UTF_8),
                     storedValue.getBytes(StandardCharsets.UTF_8));
         }
