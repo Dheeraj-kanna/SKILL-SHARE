@@ -1,0 +1,80 @@
+# ==========================================
+# Maven / Build outputs
+# ==========================================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Compiled binaries
+*.class
+*.jar
+*.war
+*.ear
+
+# ==========================================
+# macOS System Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ==========================================
+# IDE / Editor Files
+# ==========================================
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Visual Studio Code
+.vscode/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# ==========================================
+# Logs & Temp files
+# ==========================================
+*.log
+*.tmp
+*.temp
+
+# ==========================================
+# Sensitive Configuration & Credentials
+# ==========================================
+# Protects your database password from being pushed
+src/main/resources/application.properties
+*.env
+
+# ==========================================
+# Personal Notes / Scratch Files
+# ==========================================
+p.txt
